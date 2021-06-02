@@ -7,7 +7,6 @@ public class Main {
                     .setName("Анна")
                     .setSurname("Вольф")
                     .setAge(31)
-                    .setAddress("Сидней")
                     .build();
             Person son = mom.newChildBuilder()
                     .setName("Антошка")

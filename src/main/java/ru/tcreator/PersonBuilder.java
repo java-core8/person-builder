@@ -6,7 +6,6 @@ public class PersonBuilder implements PersonBuilderInterface{
     private String address;
     private int age = -1;
 
-
     PersonBuilder() {}
 
     /**
@@ -64,10 +63,11 @@ public class PersonBuilder implements PersonBuilderInterface{
     }
 
     /**
-     * setter for surname
+     * setter for age
      * @param age {@integer}}
      * @return {@link PersonBuilder}
      * @throws FiledValueHasSetException if filed was been set earlier
+     * @throws IllegalArgumentException if argument age does not match condition
      */
     @Override
     public PersonBuilder setAge(int age) throws FiledValueHasSetException, IllegalArgumentException {
@@ -83,7 +83,7 @@ public class PersonBuilder implements PersonBuilderInterface{
     }
 
     /**
-     * setter for surname
+     * setter for address
      * @param address {@link String}
      * @return {@link PersonBuilder}
      * @throws FiledValueHasSetException if filed was been set earlier
